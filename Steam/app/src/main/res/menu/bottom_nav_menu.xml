@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="apps" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="biblioteca" />
+    <item
+        android:id="@+id/nav_shop"
+        android:title="games" />
+    <item
+        android:id="@+id/nav_menu"
+        android:title="principal"/>
+    <item
+
+        android:title="profile"/>
+</menu>

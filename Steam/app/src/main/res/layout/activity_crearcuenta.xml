@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo"
+            android:alpha="0.7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <!-- Texto sobre el fondo -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="25dp"
+                android:background="@android:color/transparent"
+                android:text="Crear cuenta"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/registerNameEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Nombre de usuario"
+                android:textSize="20sp"
+                android:gravity="start"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/registerEmailEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Ingrese su correo"
+                android:textSize="20sp"
+                android:gravity="start"
+                android:textColorHint="@color/white"
+                android:inputType="textEmailAddress" />
+
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/registerPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese su contraseña"
+                    android:textSize="20sp"
+                    android:gravity="start"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/white"
+                    android:paddingEnd="15dp"/>
+
+                <ImageView
+                    android:id="@+id/togglePasswordVisibility"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_eye_closed"
+                    android:contentDescription="Mostrar contraseña" />
+            </FrameLayout>
+
+            <!-- Confirmar Contraseña -->
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/registerConfirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirme su contraseña"
+                    android:textSize="20sp"
+                    android:gravity="start"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/white"
+                    android:paddingEnd="15dp"/>
+
+                <ImageView
+                    android:id="@+id/toggleConfirmPasswordVisibility"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_eye_closed"
+                    android:contentDescription="Mostrar contraseña" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_ir2"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="Crear cuenta"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar sesion con"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="20sp"/>
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="      Microsoft" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/microsoftt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="     Google"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/google" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="      Facebook" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/facebook" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
